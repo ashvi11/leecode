@@ -16,3 +16,8 @@ class Solution:
         return maxcount
     
     
+#Approach 2: Logic- Convert the array to string using join(), then split by '0', then find the string with max length
+
+class Solution:
+    def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
+        return max(map(len,''.join(map(str,nums)).split('0')))
