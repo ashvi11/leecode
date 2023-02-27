@@ -21,6 +21,8 @@ class Solution:
 class Solution:
     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
         return max(map(len,''.join(map(str,nums)).split('0')))
+# or
+#       return len(max(''.join(map(str,nums)).split('0'), key = len))
 
     
     
