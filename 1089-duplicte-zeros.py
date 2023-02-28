@@ -11,3 +11,7 @@ class Solution:
                 i += 2
             else:
                 i += 1
+
+                
+# TC = O(n^2) (while loop- n, insert operation- n, hence n*n = n^2)
+# SC = O(1)
