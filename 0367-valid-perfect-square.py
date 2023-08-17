@@ -9,7 +9,7 @@
 class Solution:
     def isPerfectSquare(self, num: int) -> bool:
 
-        for i in range(num+1):
+        for i in range(1, num+1):
             if i*i == num:
                 return True
         return False
@@ -28,7 +28,7 @@ class Solution:
 class Solution:
     def isPerfectSquare(self, num: int) -> bool:
 
-        for i in range(num+1):
+        for i in range(1, num+1):
             if i*i == num:
                 return True
             elif i*i > num:
@@ -52,7 +52,7 @@ class Solution:
 class Solution:
     def isPerfectSquare(self, num: int) -> bool:
 
-        l, r = 0, num
+        l, r = 1, num
 
         while l <= r:
             m = (l + r) // 2
