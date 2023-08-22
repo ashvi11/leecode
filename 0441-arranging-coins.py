@@ -41,6 +41,9 @@ class Solution:
 # when n > m(m+1)/2, then it means that that row(m) needs less coins than we actually have, so m could be a candidate for our answer.
 # we need highest candidate that is < n. Return the highest candidate.
 
+# Time Complexity = O(logn)
+# Space Complexity = O(1)
+
 class Solution:
     def arrangeCoins(self, n: int) -> int:
 
